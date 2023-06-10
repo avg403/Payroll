@@ -22,13 +22,16 @@
         font-size: 16em;
         color: 	#CCFF99;
         }
+        th{
+        color:lightcoral;
+    }
 
     </style>
     
 
 </head>
 <body>
-        <p><b>EMPLOYEE DETAILS</b></p>
+        <p><b>UPDATE/DELETE</b></p>
     <?php
     $servername = "localhost";
     $username = "root";
@@ -58,8 +61,8 @@
         <th>MOBILE NO</th>
         <th>DESIGNATION</th>
         <th>SALARY</th>
-        <th style="color:#b6b1af;">UPDATE</th>
-        <th style="color:#b6b1af;">DELETE</th>
+        <th style="color:lightcyan;">UPDATE</th>
+        <th style="color:lightcyan;">DELETE</th>
     </tr>
 
     <?php

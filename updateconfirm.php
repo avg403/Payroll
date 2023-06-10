@@ -53,7 +53,7 @@ SALARY=$sal
 WHERE EMPID=$id3";
 
 if ($conn->query($sql) === TRUE) {
-  echo " <h3>THE DATA HAS BEEN UPDATED SUCEESSFULL<br>CLICK THE BELOW BUTTON TO RETURN HOME.<h3><br><br>";
+  echo " <h3>THE DATA HAS BEEN UPDATED SUCEESSFULLY<br>CLICK THE BELOW BUTTON TO RETURN HOME.<h3><br><br>";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

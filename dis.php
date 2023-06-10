@@ -22,6 +22,9 @@
         font-size: 16em;
         color: 	#CCFF99;
         }
+    th{
+        color:lightcoral;
+    }
 
     </style>
  <link rel="stylesheet" href="style2.css">
@@ -48,7 +51,7 @@
     ?>
     <table style="width:100%">
     <tr>
-        <th>EMPID</th>
+        <th >EMPID</th>
         <th>NAME</th>
         <th>AGE</th>
         <th>DOB</th>
