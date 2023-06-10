@@ -1,0 +1,26 @@
+.button2 {
+    background-color: #0c0600;
+    color: rgb(240, 229, 17);
+    border: 2px solid #d3fd18;
+    border-radius: 12px;
+    width: 175px;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+  }
+  
+  .button2:hover {
+    background-color: #cae116;
+    color: #4a1919;
+    border: 2px solid #020508;
+  }
+
+ 
+  
