@@ -2,7 +2,7 @@
 
 <head>
     <title>
-        DATA ADDD
+        DATA ADDED
     </title>
     <link rel="stylesheet" href="style2.css">
 </head>

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body bgcolor="	#330033" >
-    <p>EMPLOYEE DELETING</p>
+    <p>EMPLOYEE DELETED</p>
 <?php
 $servername = "localhost";
 $username = "root";
