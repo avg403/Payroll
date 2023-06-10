@@ -79,7 +79,7 @@
         <td> <?php echo $row["DESIGNATION"];  ?></td>
         <td> <?php echo $row["SALARY"];  ?></td>
         <td> <a href="update.php?id2=<?php echo $id1; ?>" > UPDATE</a></td>
-        <td> <a href="delete.php?id1=<?php echo $id1; ?>">DELETE</a></td>
+        <td> <a href="delete.php?id1=<?php echo $id1; ?>" onclick="return confirm('Permanently delete the record?You cannot undo this.')">DELETE</a></td>
         
         
     </tr>
@@ -94,6 +94,13 @@
     $conn->close();
     
 ?>
+
 </table>
+<script>
+            var el_up = document.getElementById("GFG_UP");
+              
+            el_up.innerHTML = 
+                "Click on the LINK for further confirmation."; 
+        </script> 
 </body>  
 </html>    
