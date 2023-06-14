@@ -87,9 +87,9 @@ if($result->num_rows>0) {
           <td><input type="text"    name="empid3" value=<?php echo $empid2 ?>  readonly="readonly"> <br><br></td>
         </tr>
         <tr>
-          <td ><p>NAME:<br><h4>(Existing-<?php echo $name1 ?>)</h4>&emsp;&emsp;&emsp;</p></td>       
+          <td ><p>NAME: &emsp;&emsp;&emsp; <br><br> </p></td>       
 
-          <td><input type="text"    name="fname3" value=<?php echo $name1 ?> autofocus> <br><br><br><br><br></td>
+          <td><input type="text"    name="fname3" value="<?php echo htmlspecialchars($name1) ?>" ></input> <br><br></td>
         </tr>
         <tr>
           <td><p>AGE :<br><br></p></td>       
@@ -100,24 +100,49 @@ if($result->num_rows>0) {
           <td><input type="date"    name="dob3" value=<?php echo $dob1 ?> ><br><br></td>
         </tr>
         <tr>
-          <td><p>GENDER: <br><h4>(Existing- <?php echo $sex1 ?>)</h4>  <br><br></p></td>  
-          <td style="color: #ffff;"><input type="radio"   name="sex3"     value="MALE">     MALE     &emsp;
+          <td><p>GENDER:   <br><br></p></td> 
+          <td style="color: #ffff;">
+          <?php
+          if($sex1=="MALE")
+          {?>
+          
+          <input type="radio"   name="sex3"     value="MALE" checked="checked">     MALE     &emsp;
           <input type="radio"   name="sex3"     value="FEMALE">   FEMALE   &emsp;
           <input type="radio"   name="sex3"     value="OTHER">    OTHERS   &emsp;
-          <br><br><br><br><br><br></td>
+          <?php } 
+
+          else if($sex1=="FEMALE")
+          {?>
+          
+          <input type="radio"   name="sex3"     value="MALE" >     MALE     &emsp;
+          <input type="radio"   name="sex3"     value="FEMALE"   checked="checked">   FEMALE   &emsp;
+          <input type="radio"   name="sex3"     value="OTHER">    OTHERS   &emsp;
+          <?php } 
+          else
+          {?>
+          
+          <input type="radio"   name="sex3"     value="MALE" >     MALE     &emsp;
+          <input type="radio"   name="sex3"     value="FEMALE">   FEMALE   &emsp;
+          <input type="radio"   name="sex3"     value="OTHER"   checked="checked">    OTHERS   &emsp;
+          <?php } ?> 
+
+
+
+
+          <br><br></td>
         </tr>
         <tr>
           <td><p>BLOOD GRP :<br><br></p></td> 
           <td><select name="blood3" required>
-          <option value="<?php echo $blood1 ?>" selected disabled hidden> <?php echo $blood1 ?> </option>
-            <option value="A+"> A+ </option>
-            <option value="A-"> A- </option>
-            <option value="AB+"> AB+ </option>
-            <option value="AB-"> AB- </option>
-            <option value="B+"> B+ </option>
-            <option value="B-"> B- </option>
-            <option value="O+"> O+ </option>
-            <option value="O-"> O- </option>
+          <option id="$blood1" checked="selected"> <?php echo $blood1 ?> </option>
+            <option value="A+" id="A+"> A+ </option>
+            <option value="A-" id="A-"> A- </option>
+            <option value="AB+"id="AB+"> AB+ </option>
+            <option value="AB-" id="AB-"> AB- </option>
+            <option value="B+" id="B+"> B+ </option>
+            <option value="B-" id="B-"> B- </option>
+            <option value="O+" id="O+"> O+ </option>
+            <option value="O-" id="O-"> O- </option>
             
           </select><br><br></td>
         </tr>
@@ -127,7 +152,7 @@ if($result->num_rows>0) {
         </tr>
         <tr>
           <td><p>DESIGNATION :<br><br></p></td>     
-          <td><input type="text"     name="desig3"   value=<?php echo $desig1 ?>  required><br><br></td>
+          <td><input type="text"     name="desig3"   value="<?php echo $desig1 ?>"  required><br><br></td>
         </tr>
         <tr>
           <td><p>SALARY :<br><br></p></td>     

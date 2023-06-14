@@ -42,9 +42,9 @@
         </tr>
         <tr style="color: #fff;">
           <td><p>GENDER :<br><br></p></td>  
-          <td><input type="radio"   name="sex"     value="male">     MALE     &emsp;
-          <input type="radio"   name="sex"     value="female">   FEMALE   &emsp;
-          <input type="radio"   name="sex"     value="other">    OTHERS   &emsp;
+          <td><input type="radio"   name="sex"     value="MALE">     MALE     &emsp;
+          <input type="radio"   name="sex"     value="FEMALE">   FEMALE   &emsp;
+          <input type="radio"   name="sex"     value="OTHER">    OTHERS   &emsp;
           <br><br></td>
         </tr>
         <tr>
